@@ -2,143 +2,89 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    /* font-family: 'Pacifico', cursive; */
-    /* font-family: 'Mynerve', cursive; */
+
+     /* font-family: 'Pacifico', cursive; */
+    /* font-family: 'Mynerve', cursive; */  
 }
 
-body{
-    background-color: #eee5bf;
-    padding: 100px;
-}
 
 .main{
     width: 100%;
-    height: auto;
-    background-color: #eee5bf;
-    display: grid;
-    place-items: center;
+    height: 100vh;
+    background: #FFE8E1;
 
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;  
 }
 
 
 .main .todo{
-    /* border: 2px solid #000; */
-    padding: 0px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-.main .todo h2{
-    font-size: 32px;
-    font-family: 'Pacifico', cursive;
-}
-
-.main .todo .create-todo{
-    width: 100%;
     
-    background-color: #d3c1c3;
+    width: 50%;
+    height: auto;
+    margin: 100px;
+    border: 1px solid #000;
+    padding: 50px;
+
+}
+.main .todo h2{
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+}
+
+
+.main .todo .add{
+    width: 100%;
+    height: 60%;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 10px 30px;
-    box-shadow: 4px 4px 10px #6e6e6e;
-    border: #434343 solid 2px;
-    border-radius: 10px;
-    
-
+    gap: 15px;
+    background: #EFAAC4;
+    padding:  15px 20px;
+    border-radius: 5px;
 }
 
-.main .todo .create-todo input{
-    width: 400px;
+
+.main .todo .add input[type=text]{
+    width: 95%;
     font-size: 20px;
-    font-family: 'Mynerve', cursive;
+    background: #EFAAC4;
     padding: 5px 10px;
+    border: #6B717E .5px solid;
+    font-family: 'Mynerve', cursive;
+    text-align: center;  
+
+     
+}
+
+.main .todo .add .add-btn{
+    width: 95%;
+    /* height: 32px; */
+    font-size: 20px;
+    padding: 5px 0px;
+    background: #FFC4D1;
+    color:#000;
+    font-family: 'Mynerve', cursive;
     border: none;
-    background-color: #d3c1c3;
+    border-radius: 3px;
+    box-shadow: inset 3px 3px 6px #7b7a7a, 6px 6px 6px #000;
+}
+
+
+.main .todo .todo-container{
+    
     
 }
-
-.main .todo .create-todo button{
-    width: 120px;
-    background-color: #D1FFC6;
-    font-size: 18px;
-    font-weight: 900;
-    font-family: 'Mynerve', cursive;
-    padding: 5px 15px;
-    border: 0.5px solid #6e6e6e;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: inset 4px 4px 4px #faeded, 2px 2px 4px #434343;
-}
-
-
-.main .todo .list-container{
-    background: #E2D0BE;
-    border: #0001 1px solid;
-    width: 100%;
-    height: auto;
-    margin: 20px 0px;
-    padding: 20px;
-    
-}
-
-.main .todo .list-container ul {
-    width: 100%;
-    padding: 20px;
-    list-style: none;
-    /* background: white; */
-}
-
-.main .todo .list-container ul li{
-    background: #c1f3f8;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-    box-shadow: 3px 3px 6px #6e6e6e;
-    display: flex;
-}
-
-.main .todo .list-container ul li input{
-    margin-right: 10px; 
-    
-}
-
-
-.main .todo .list-container ul li p{
-    font-family: 'Mynerve', cursive;
-}
-
-
-.main .todo .list-container ul li input:checked+p{
-    text-decoration: line-through;
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
