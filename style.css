@@ -4,7 +4,7 @@
     box-sizing: border-box;
 
      /* font-family: 'Pacifico', cursive; */
-    /* font-family: 'Mynerve', cursive; */  
+    font-family: 'Mynerve', cursive;  
 }
 
 
@@ -72,18 +72,37 @@
     /* height: 32px; */
     font-size: 20px;
     padding: 5px 0px;
-    background: #FFC4D1;
+    background: #c4d1ff;
     color:#000;
     font-family: 'Mynerve', cursive;
     border: none;
     border-radius: 3px;
     box-shadow: inset 3px 3px 6px #7b7a7a, 6px 6px 6px #000;
+    cursor: pointer;
 }
 
 
 .main .todo .todo-container{
+    width: 100%;
+    height: auto;
+    background: #D4DCCD;
+    margin-top: 20px;
+    padding: 20px 30px;
+    list-style: none;
+}
+
+.main .todo .todo-container li{
+    display: flex;
     
-    
+}
+
+
+.main .todo .todo-container li input[type=checkbox]{
+    margin-right: 20px;
+}
+
+.main .todo .todo-container li p{
+    font-size: 22px;
 }
 
 
