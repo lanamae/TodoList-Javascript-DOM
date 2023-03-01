@@ -12,9 +12,10 @@ addBtn.addEventListener('click', () =>{
     newCheck.type = 'checkbox';
     newLi.appendChild(newCheck);
 
-    const newInput = document.createTextNode(input.value);
-    // const newTodo = document.createElement('p')
-    // newTodo.innerText = newInput;
-    newLi.appendChild(newInput);
+    const newP = document.createElement('p');
+    newLi.appendChild(newP);
+
+    const newTodo = document.createTextNode(input.value);
+    newP.appendChild(newTodo);
 
 })
